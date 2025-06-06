@@ -4,7 +4,7 @@ MAINTAINER Nathanael Noblet <nathanael@noblet.ca>
 RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm https://rpms.remirepo.net/enterprise/remi-release-9.rpm && \
     rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-9 /etc/pki/rpm-gpg/RPM-GPG-KEY-remi /etc/pki/rpm-gpg/RPM-GPG-KEY-AlmaLinux-9 && \
     dnf config-manager --enable remi && \
-    dnf module -y enable php:remi-8.3 && \
+    dnf module -y enable php:remi-8.4 && \
     dnf update -y && \
     dnf clean all && \
     rm -rf /var/cache/dnf/*
